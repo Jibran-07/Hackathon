@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shareable Resume</h1>
+    <form id="resume">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">UserName:</label>
+            <input type="text" id="username" placeholder="Type username" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Type name" required>
+            <label for="name">Email:</label>
+            <input type="email" id="email" placeholder="Type email" required>
+            <label for="name">Contact:</label>
+            <input type="tel" id="contact" placeholder="Type contact number" required>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="institutes">Institutions:</label>
+            <textarea id="institutes" placeholder="Type Institutions" rows="3" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="organizations">Organizations:</label>
+            <textarea id="organizations" placeholder="Type Organizations" rows="3" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skill">Skills:</label>
+            <textarea id="skill" placeholder="Type Skills" rows="3" required></textarea>
+        </fieldset>
+        <button type="submit"><b>Create Resume</b></button>
+    </form>
+    <br>
+    <div id="display" contenteditable="true"></div>
+    <br>
+    <div id="share-link" style="display: none;">
+        <h2>Share Resume</h2>
+        <a href="#" id="resume-link" target="_blank"></a>
+        <br>
+        <button id="download-btn">Download Resume</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
